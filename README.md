@@ -1,237 +1,67 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/nRcUn8vA)
-# Template for Capstone
-이 레파지토리는 학생들이 캡스톤 프로젝트 결과물을 위한 레파지토리 생성시에 참고할 내용들을 담고 있습니다.
-1. 레파지토리 생성
-2. 레파지토리 구성
-3. 레파지토리 제출 
-4. README.md 가이드라인
-5. README.md 작성팁
+# 생성형 인공지능을 기반으로 한 알고리즘 학습 플랫폼 구현
 
----
+## 1. 프로젝트 배경
+정부의 '**디지털 인재양성 종합방안**'에 따라 2025년부터 초·중등 코딩 교육이 전면 확대되었다. 정보 교과 시수가 초등 34시간, 중등 68시간 이상으로 2배 이상 증가하면서, 공교육 현장에서의 효과적인 알고리즘 학습 보조 도구에 대한 수요가 폭발적으로 증가할 전망이다. 하지만 '백준', '프로그래머스'와 같은 기존 온라인 저지(OJ) 플랫폼들은 학습자가 문제 풀이 중 막혔을 때 즉각적인 피드백을 제공하지 못한다. 이로 인해 학습자는 문제 해결을 위해 외부 검색에 의존하게 되어 학습 흐름이 단절되고, 정적인 해설은 개인의 현재 코드 상태나 사고 과정을 반영하지 못하는 한계가 있다. 또한, 획일적인 문제 목록은 사용자의 실력이나 취약점을 고려하지 않아 체계적인 성장을 저해하는 요인이 되었다.
 
-## 1. 레파지토리 생성
-- [https://classroom.github.com/a/nRcUn8vA](https://classroom.github.com/a/nRcUn8vA)
-- 위 Github Classroom 링크에 접속해 본인 조의 github 레파지토리를 생성하세요.
+**CodeSphere**는 이러한 문제점을 해결하기 위해, 학습자 개개인에 최적화된 지속 가능한 알고리즘 학습 생태계를 구축하는 것을 목표로 한다. 최신 생성형 AI 기술을 통해 학습 과정에서 마주하는 장애물을 제거하고, 개인의 학습 데이터를 심층 분석하여 맞춤형 학습 경로를 제시함으로써 학습 효율을 극대화하고 코딩에 대한 흥미를 유지시키는 새로운 패러다임을 제안한다.
 
-<img width="700" alt="깃헙 클래스룸 레포 생성" src="https://github.com/user-attachments/assets/34ca1f43-c2cd-4880-a39e-0dafd889c35f" />
 
-- 레포지토리 생성 시 팀명은 `TEAM-{조 번호}` 형식으로 생성하세요.
-- 예를 들어, 2025년도 3조의 팀명은 `TEAM-03` 입니다.
-- 이 경우 `Capstone2025-team-03`이란 이름으로 레파지토리가 생성됩니다.
+## 2. 개발 목표
+### 2.1. 목표 및 세부 내용
+본 과제의 최종 목표는 기존 학습 플랫폼의 한계를 극복하는 '**AI 기반 개인 맞춤형 알고리즘 학습 플랫폼**'을 구현하는 것으로, 이를 위해 다음과 같은 세 가지 핵심 기능을 개발하였다.
 
----
-
-## 2. 레파지토리 구성
-- 레파지토리 내에 README.md 파일 생성하고 아래의 가이드라인과 작성팁을 참고하여 README.md 파일을 작성하세요. (이 레파지토리의 SAMPLE_README.md 참조)
-- 레파지토리 내에 docs 디렉토리를 생성하고 docs 디렉토리 내에는 과제 수행 하면서 작성한 각종 보고서, 발표자료를 올려둡니다. (이 레파지토리의 docs 디렉토리 참조)
-- 그 밖에 레파지토리의 폴더 구성은 과제 결과물에 따라 자유롭게 구성하되 가급적 코드의 목적이나 기능에 따라 디렉토리를 나누어 구성하세요.
-
----
-
-## 3. 레파지토리 제출 
-
-- **`[주의]` 레파지토리 제출**은 해당 레파지토리의 ownership을 **학과 계정**으로 넘기는 것이므로 되돌릴 수 없습니다.
-- **레파지토리 제출** 전, 더 이상 수정 사항이 없는지 다시 한번 확인하세요.
-- github 레파지토리에서 Settings > General > Danger zone > Transfer 클릭
-  <img src="https://github.com/user-attachments/assets/cb2361d4-e07e-4b5d-9116-aa80dddd8a8b" alt="소유주 변경 경로" width="500" />
+- **생성형 AI 기반 '힌트 제공' 기능**: 사용자가 문제 풀이 중 어려움을 겪을 때, 단순히 정답을 알려주는 것이 아니라 문제의 맥락과 사용자의 실시간 코드를 분석하여 다음 단계로 나아갈 수 있도록 유도하는 RAG(검색 증강 생성) 기반의 상황인지형 힌트를 제공
   
-- [ Specify an organization or username ]에 'PNUCSE'를 입력하고 확인 메세지를 입력하세요.
-  <img src="https://github.com/user-attachments/assets/7c63955d-dcfe-4ac3-bdb6-7d2620575f3a" alt="소유주 변경" width="400" />
+- **사용자 풀이 기반 '문제 추천 시스템'** 기능: 사용자의 정답률, 풀이 시간, 힌트 사용 빈도 등 학습 데이터를 분석하여 개인의 취약점을 파악합니다. 이를 바탕으로 콜드 스타트 문제를 고려한 하이브리드 추천 시스템이 개인의 성장에 가장 도움이 되는 맞춤형 문제를 제시
+  
+- **생성형 AI 기반 '문제 생성' 기능**: 특정 알고리즘 유형이나 난이도에 맞춰 새로운 문제를 동적으로 생성합니다. ToT(Tree-of-Thoughts) 및 자체 검증 파이프라인을 통해 생성된 문제의 논리적 일관성을 보장하며, 무한한 학습 기회를 제공
 
----
+### 2.2. 기존 서비스 대비 차별성 
+기존 온라인 저지 플랫폼이 정적인 '문제 은행' 역할에 그치는 반면, CodeSphere는 학습자 개개인과 상호작용하는 'AI 튜터' 역할을 지향한다. 사용자가 힌트, 추천, 생성을 하나의 플랫폼 내에서 완결된 흐름으로 경험하게 함으로써, 외부 검색으로 인한 학습 흐름의 단절을 막고 높은 몰입도를 유지시키는 것이 핵심 차별점이다. 기술적으로도 단순 LLM 호출을 넘어, RAG 및 ToT와 같은 기법을 적용하여 생성되는 콘텐츠의 신뢰성과 품질을 보장하는 데 중점을 두었다.
 
-## 4. README.md 가이드 라인
-- README 파일 작성시에 아래의 5가지 항목의 내용은 필수적으로 포함해야 합니다.
-- 아래의 항목이외에 프로젝트의 이해를 돕기 위한 내용을 추가해도 됩니다.
-- SAMPLE_README.md 이 단순한 형태의 예제이니 참고하세요.
 
-```markdown
-### 1. 프로젝트 배경
-#### 1.1. 국내외 시장 현황 및 문제점
-> 시장 조사 및 기존 문제점 서술
-
-#### 1.2. 필요성과 기대효과
-> 왜 이 프로젝트가 필요한지, 기대되는 효과 등
-
-### 2. 개발 목표
-#### 2.1. 목표 및 세부 내용
-> 전체적인 개발 목표, 주요 기능 및 기획 내용
-
-#### 2.2. 기존 서비스 대비 차별성 
-> 유사 서비스 비교 및 차별점 부각
-
-#### 2.3. 사회적 가치 도입 계획 
-> 프로젝트의 공공성, 지속 가능성, 환경 보호 등
-### 3. 시스템 설계
-#### 3.1. 시스템 구성도
+## 3. 시스템 설계
+### 3.1. 시스템 구성도
 > 이미지 혹은 텍스트로 시스템 아키텍쳐 작성
 >
-#### 3.2. 사용 기술
+### 3.2. 사용 기술
 > 프론트엔드, 백엔드, API 등 구체 기술 스택
 
-### 4. 개발 결과
-#### 4.1. 전체 시스템 흐름도
+## 4. 개발 결과
+### 4.1. 전체 시스템 흐름도
 > 기능 흐름 설명 및 도식화 가능
 >
-#### 4.2. 기능 설명 및 주요 기능 명세서
+### 4.2. 기능 설명 및 주요 기능 명세서
 > 주요 기능에 대한 상세 설명, 각 기능의 입력/출력 및 설명
 >
-#### 4.3. 디렉토리 구조
+### 4.3. 디렉토리 구조
 >
-#### 4.4. 산업체 멘토링 의견 및 반영 사항
+### 4.4. 산업체 멘토링 의견 및 반영 사항
 > 멘토 피드백과 적용한 사례 정리
 
-### 5. 설치 및 실행 방법
+## 5. 설치 및 실행 방법
 >
-#### 5.1. 설치절차 및 실행 방법
+### 5.1. 설치절차 및 실행 방법
 > 설치 명령어 및 준비 사항, 실행 명령어, 포트 정보 등
-#### 5.2. 오류 발생 시 해결 방법
+### 5.2. 오류 발생 시 해결 방법
 > 선택 사항, 자주 발생하는 오류 및 해결책 등
 
-### 6. 소개 자료 및 시연 영상
-#### 6.1. 프로젝트 소개 자료
+## 6. 소개 자료 및 시연 영상
+### 6.1. 프로젝트 소개 자료
 > PPT 등
-#### 6.2. 시연 영상
+### 6.2. 시연 영상
 > 영상 링크 또는 주요 장면 설명
 
-### 7. 팀 구성
-#### 7.1. 팀원별 소개 및 역할 분담
+## 7. 팀 구성
+### 7.1. 팀원별 소개 및 역할 분담
+
+| <p align="center">Profile</p> | <p align="center">Role</p>| <p align="center">Email</p> | <p align="center">GitHub</p> |
+|:------:|:------------------------------------|:------|:--------|
+| <p align="center"><img src="https://github.com/TrioDW.png?size=80" width="80"/><br/><strong>김대욱</strong></p> | <p align="center">Team Leader / Backend Developer</p> | <p align="center">kdu5233@pusan.ac.kr</p> | <p align="center">[@TrioDW](https://github.com/TrioDW)</p> |
+| <p align="center"><img src="https://github.com/mun-kyeong.png?size=80" width="80"/><br/><strong>김문경</strong></p> | <p align="center">Frontend Developer</p> | <p align="center">horse6953@pusan.ac.kr</p> | <p align="center">[@mun-kyeong](https://github.com/mun-kyeong)</p> |
+| <p align="center"><img src="https://github.com/maureen272.png?size=80" width="80"/><br/><strong>김진우</strong></p> | <p align="center">AI Developer</p> | <p align="center">maureen272@pusan.ac.kr</p> | <p align="center">[@maureen272](https://github.com/maureen272)</p> |
 >
-#### 7.2. 팀원 별 참여 후기
+### 7.2. 팀원 별 참여 후기
 > 개별적으로 느낀 점, 협업, 기술적 어려움 극복 사례 등
 
 ### 8. 참고 문헌 및 출처
-
-```
-
-## 5. README.md 작성팁 
-* 마크다운 언어를 이용해 README.md 파일을 작성할 때 참고할 수 있는 마크다운 언어 문법을 공유합니다.  
-* 다양한 예제와 보다 자세한 문법은 [이 문서](https://www.markdownguide.org/basic-syntax/)를 참고하세요.
-
-### 5.1. 헤더 Header
-```
-# This is a Header 1
-## This is a Header 2
-### This is a Header 3
-#### This is a Header 4
-##### This is a Header 5
-###### This is a Header 6
-####### This is a Header 7 은 지원되지 않습니다.
-```
-<br />
-
-### 5.2. 인용문 BlockQuote
-```
-> This is a first blockqute.
->	> This is a second blockqute.
->	>	> This is a third blockqute.
-```
-> This is a first blockqute.
->	> This is a second blockqute.
->	>	> This is a third blockqute.
-<br />
-
-### 5.3. 목록 List
-* **Ordered List**
-```
-1. first
-2. second
-3. third  
-```
-1. first
-2. second
-3. third
-<br />
-
-* **Unordered List**
-```
-* 하나
-  * 둘
-
-+ 하나
-  + 둘
-
-- 하나
-  - 둘
-```
-* 하나
-  * 둘
-
-+ 하나
-  + 둘
-
-- 하나
-  - 둘
-<br />
-
-### 5.4. 코드 CodeBlock
-* 코드 블럭 이용 '``'
-```
-여러줄 주석 "```" 이용
-"```
-#include <stdio.h>
-int main(void){
-  printf("Hello world!");
-  return 0;
-}
-```"
-
-단어 주석 "`" 이용
-"`Hello world`"
-
-* 큰 따움표(") 없이 사용하세요.
-``` 
-<br />
-
-### 5.5. 링크 Link
-```
-[Title](link)
-[부산대학교 정보컴퓨터공학부](https://cse.pusan.ac.kr/cse/index..do)
-
-<link>
-<https://cse.pusan.ac.kr/cse/index..do>
-``` 
-[부산대학교 정보컴퓨터공학부](https://cse.pusan.ac.kr/cse/index..do)
-
-<https://cse.pusan.ac.kr/cse/index..do>
-<br />
-
-### 5.6. 강조 Highlighting
-```
-*single asterisks*
-_single underscores_
-**double asterisks**
-__double underscores__
-~~cancelline~~
-```
-*single asterisks* <br />
-_single underscores_ <br />
-**double asterisks** <br />
-__double underscores__ <br />
-~~cancelline~~  <br />
-<br />
-
-### 5.7. 이미지 Image
-```
-<img src="image URL" width="600px" title="Title" alt="Alt text"></img>
-![Alt text](image URL "Optional title")
-```
-- 웹에서 작성한다면 README.md 내용 안으로 이미지를 드래그 앤 드롭하면 이미지가 생성됩니다.
-- 웹이 아닌 로컬에서 작성한다면, github issue에 이미지를 드래그 앤 드롭하여 image url 을 얻을 수 있습니다. (URL만 복사하고 issue는 제출 안 함.)
-  <img src="https://github.com/user-attachments/assets/0fe3bff1-7a2b-4df3-b230-cac4ef5f6d0b" alt="이슈에 image 올림" width="600" />
-  <img src="https://github.com/user-attachments/assets/251c6d42-b36b-4ad4-9cfa-fa2cc67a9a50" alt="image url 복사" width="600" />
-
-
-### 5.8. 유튜브 영상 추가
-```markdown
-[![영상 이름](유튜브 영상 썸네일 URL)](유튜브 영상 URL)
-[![부산대학교 정보컴퓨터공학부 소개](http://img.youtube.com/vi/zh_gQ_lmLqE/0.jpg)](https://www.youtube.com/watch?v=zh_gQ_lmLqE)    
-```
-[![부산대학교 정보컴퓨터공학부 소개](http://img.youtube.com/vi/zh_gQ_lmLqE/0.jpg)](https://www.youtube.com/watch?v=zh_gQ_lmLqE)    
-
-- 이때 유튜브 영상 썸네일 URL은 유투브 영상 URL로부터 다음과 같이 얻을 수 있습니다.
-
-- `Youtube URL`: https://www.youtube.com/watch?v={동영상 ID}
-- `Youtube Thumbnail URL`: http://img.youtube.com/vi/{동영상 ID}/0.jpg 
-- 예를 들어, https://www.youtube.com/watch?v=zh_gQ_lmLqE 라고 하면 썸네일의 주소는 http://img.youtube.com/vi/zh_gQ_lmLqE/0.jpg 이다.
-
