@@ -125,22 +125,16 @@
     └── ...
 ```
 
-## 5. 설치 및 실행 방법
-### 5.1. 설치절차 및 실행 방법
-> 설치 명령어 및 준비 사항, 실행 명령어, 포트 정보 등
-### 5.2. 오류 발생 시 해결 방법
-> 선택 사항, 자주 발생하는 오류 및 해결책 등
-
 <br>
 
-## 6. 소개 자료 및 시연 영상
-### 6.1. 시연 영상
+## 5. 소개 자료 및 시연 영상
+### 5.1. 시연 영상
 [![CodeSphere](https://github.com/user-attachments/assets/7dd4ebac-f0e5-48bb-bb91-e681eea4911c)](https://www.youtube.com/watch?v=nC5KDjFtwjA)  
 
 <br>
 
-## 7. 팀 구성
-### 7.1. 팀원별 소개 및 역할 분담
+## 6. 팀 구성
+### 6.1. 팀원별 소개 및 역할 분담
 
 | <p align="center">Profile</p> | <p align="center">Role</p>| <p align="center">Email</p> | <p align="center">GitHub</p> |
 |:------:|:------------------------------------|:------|:--------|
@@ -148,7 +142,7 @@
 | <p align="center"><img src="https://github.com/mun-kyeong.png?size=80" width="80"/><br/><strong>김문경</strong></p> | <p align="center">Frontend Developer</p> | <p align="center">horse6953@pusan.ac.kr</p> | <p align="center">[@mun-kyeong](https://github.com/mun-kyeong)</p> |
 | <p align="center"><img src="https://github.com/maureen272.png?size=80" width="80"/><br/><strong>김진우</strong></p> | <p align="center">AI Developer</p> | <p align="center">maureen272@pusan.ac.kr</p> | <p align="center">[@maureen272](https://github.com/maureen272)</p> |
 
-### 7.2. 팀원 별 참여 후기
+### 6.2. 팀원 별 참여 후기
 
 - 김대욱
   - 팀을 이루어 장기간 동안 의미 있는 프로젝트를 진행한 것은 이번이 처음이었습니다. 정보의 홍수 시대 속에서, 인공지능을 잘 활용하면 개인화 된 도구가 될 수 있을 것이라 생각합니다. 그래서, 우리가 가장 필요한 서비스이자 우리가 직접 사용하고 싶은 서비스를 개발하기 위해 본 과제를 시작했습니다. 가장 핵심적은 부분으로 꼽는 것은, 취업을 함에 있어 피할 수 없는 관문인 '코딩 테스트'를 학습하며 질 좋은 정보를 얻고 잘 학습하는 것입니다. 이를 위해서, llm 기반 문제 생성 시스템과 RAG 기반 힌트 제공 시스템을 기획하였습니다.
@@ -167,6 +161,19 @@
 
 <br>
 
-## 8. 참고 문헌 및 출처
-- Lewis, Patrick, et al. "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks." Advances in Neural Information Processing Systems, 33 (2020): 9459-9474.
-- Wei, Jason, et al. "Chain-of-thought prompting elicits reasoning in large language models." Advances in Neural Information Processing Systems, 35 (2022): 24824-24837.
+## 7. 참고 문헌 및 출처
+- 교육부, 디지털 인재양성 종합방안, pp.19, 2022
+- 한국교육개발원, 학교현장의 디지털 전환 실태와 과제, pp.3, 2023
+- Lewis, Patrick, “Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks.”, Advances in Neural Information Processing Systems (NeurIPS), 2020.
+- Wei, Jason, “Chain of Thought Prompting Elicits Reasoning in Large Language Models.”, NeurIPS, 2022.
+- OpenAI Cookbook, “Best practices for prompt engineering with OpenAI API”.
+- S. Huzurbazar, D. Kuang, and L. Lee, “A Landmark-Based Algorithm for Automatic Pattern Recognition and Abnormality Detection,” arXiv preprint arXiv:1602.05572v2, May 2017.
+- N. H. Campbell Jr., “Computing Shortest Paths Using A*, Landmarks, and Polygon Inequalities,” Proceedings of the SIAM Workshop on Network Science, Snowbird, UT, May 2015. (arXiv preprint arXiv:1603.01607v1, Mar. 2016).
+- A. Madkour, W. G. Aref, F. U. Rehman, M. A. Rahman, and S. Basalamah, “A Survey of Shortest-Path Algorithms,” arXiv preprint arXiv:1705.02044v1, May 2017.
+- B. Ghojogh, H. Nekoei, A. Ghojogh, F. Karray, and M. Crowley, “Sampling Algorithms, from Survey Sampling to Monte Carlo Methods: Tutorial and Literature Review,” arXiv preprint arXiv:2011.00901v1, Nov. 2020.
+- S. Gopal, “Classic Algorithms are Fair Learners: Classification Analysis of Natural Weather and Wildfire Occurrences,” arXiv preprint arXiv:2309.01381v1, Sep. 2023.
+- A. E. Ezugwu, Y.-S. Ho, O. S. Egwuche, O. S. Ekundayo, A. V. Merwe, A. K. Saha, and J. Pal, “Classical Machine Learning: Seventy Years of Algorithmic Learning Evolution,” Data Intelligence (MIT Press), Accepted Jul. 2024. (arXiv preprint arXiv:2408.01747v2).
+- L. Ma, R. D. Chamberlain, and K. Agrawal, “Analysis of Classic Algorithms on GPUs,” Washington University in St. Louis Technical Report, 2014.
+- S. Cheng, B. Liu, T. O. Ting, Q. Qin, Y. Shi, and K. Huang, “Survey on Data Science with Population-Based Algorithms,” Big Data Analytics, Vol. 1, No. 3, pp. 1–20, 2016.
+- R. A. Fisher, “The Use of Multiple Measurements in Taxonomic Problems,” Annals of Eugenics, Vol. 7, No. 2, pp. 179–188, 1936. (Classic foundational reference, included in your uploaded collection summary).
+- E. H. Moore, “On the Shortest Route for Motor Travel,” Proceedings of the National Academy of Sciences of the United States of America (PNAS), Vol. 11, No. 7, pp. 379–386, 1925. (Historical classic reference on shortest-path, included with the GPU/algorithm set).
